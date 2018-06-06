@@ -1,6 +1,6 @@
 require 'benchmark'
 def prime?(num)
-  if num < 1
+  if num <= 1
     false
   else
   # create a range of numbers using to_a
