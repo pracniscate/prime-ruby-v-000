@@ -6,7 +6,6 @@ def prime?(num)
   # create a range of numbers using to_a
     array = (2..num-1).to_a
     array.none? do |n|
-      # prime numbers don't
       num % n == 0
     end
   end
