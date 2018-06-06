@@ -1,11 +1,12 @@
 require 'benchmark'
 def prime?(num)
-  if num <= 1
+  if num < 1
     false
   else
   # create a range of numbers using to_a
     array = (2..num-1).to_a
     array.none? do |n|
+      # prime numbers don't
       num % n == 0
     end
   end
